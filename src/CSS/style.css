@@ -1,0 +1,123 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    background-image: url(../images/bg-repeat.jpg);
+    background-size: contain;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.informacoes {
+    color: #ffffff;
+    width: 470px;
+}
+
+.informacoes .titulo {
+    font-weight: 900;
+    margin-bottom: 11px;
+}
+
+.informacoes .texto {
+    font-weight: 300;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    min-height: 378px;
+    width: 340px;
+    background-color: #ffffff;
+    padding: 21px;
+    margin-left: 80px;
+}
+
+.formulario .campo {
+    border-radius: 5px;
+    border: 1px solid;
+    height: 35px;
+    margin-bottom: 15px;
+    padding: 10px;
+
+}
+
+.formulario .campo.nao-preenchido,
+.formulario #mensagem.campo.nao-preenchido {
+    border-color: #F52E2E;
+}
+
+.formulario .campo.preenchido,
+.formulario #mensagem.campo.preenchido {
+    border-color: #00C22B;
+}
+
+.formulario #telefone::-webkit-inner-spin-button,
+.formulario #telefone::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.formulario #telefone::-moz-appearance {
+    appearance: textfield;
+}
+
+.formulario #mensagem {
+    height: 100px;
+    resize: none;
+    border-color: #000000;
+    margin-bottom: 7px;
+    padding: 10px;
+}
+
+
+
+.formulario .campo::placeholder,
+.formulario #mensagem::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #A8A8A8;
+}
+
+.formulario .aviso-campo-obrigatorio,
+.formulario .aviso-campo-obrigatorio.mensagem {
+    opacity: 0;
+    color: #F52E2E;
+    font-size: 11px;
+    font-weight: 400;
+    margin-top: -15px;
+    margin-bottom: 8px;
+
+}
+
+.formulario .aviso-campo-obrigatorio.mensagem {
+    margin-top: -7px;
+}
+
+.formulario .aviso-campo-obrigatorio.exibir,
+.formulario .aviso-campo-obrigatorio.mensagem.exibir {
+    opacity: 100%;
+}
+
+.formulario .mensagem-campos-obrigatorios {
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: -6px;
+}
+
+.formulario #btn-enviar {
+    background-color: #3CCC87;
+    color: #ffffff;
+    height: 41px;
+    margin-top: 21px;
+    font-weight: 700;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.formulario #btn-enviar:hover {
+    cursor: pointer;
+}
